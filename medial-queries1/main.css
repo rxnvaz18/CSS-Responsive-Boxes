@@ -1,3 +1,46 @@
 body {
   background: blanchedalmond;
 }
+
+* {
+  border: 1px solid teal;
+}
+
+.container {
+  display:flex;
+  flex-direction:column;
+  min-height: 100 vh;
+  justify-content: space-between;
+}
+section {
+  background-color: aqua;
+  flex-grow: 1;
+  min-height: 30vh;
+  text-align: center;
+}
+
+main {
+  background-color: azure;
+  flex-grow: 1;
+  min-height: 30vh;
+}
+
+footer {
+  background-color: brown;
+  flex-grow: 3;
+  min-height: 30vh;
+}
+
+@media (min-width: 600px) {
+.container {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+section {
+  width: 100%;
+  margin: .5em;
+}
+main, footer {
+  margin: .5em;
+}
+}
